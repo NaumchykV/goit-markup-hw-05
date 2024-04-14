@@ -576,18 +576,21 @@ img {
   letter-spacing: 0.04em;
   text-align: left;
   color: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn:hover, footer-btn:focus {background-color: #404bbf;}
+.footer-btn:hover,
+footer-btn:focus {
+  background-color: #404bbf;
+}
 
 .footer-btn-icon {
   fill: #ffffff;
   margin-left: 16px;
-
 }
 /*---------FORM--------------*/
-  .backdrop {
+.backdrop {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -598,11 +601,14 @@ img {
     66,
     0.4
   );
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms
+      cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms
+      cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  }
+}
 
 .backdrop .is-open {
   opacity: 1;
@@ -624,8 +630,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  transition: transform 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .icon_close_btn {
   width: 24px;
@@ -642,21 +649,27 @@ img {
   justify-content: center;
   top: 24px;
   right: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms
+      cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms
+      cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon_close {
   fill: #2e2f42;
   background-color: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon_close_btn:hover, .icon_close_btn:focus {
+.icon_close_btn:hover,
+.icon_close_btn:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.icon_close_btn:hover .icon_close, .icon_close_btn:focus .icon_close {
+.icon_close_btn:hover .icon_close,
+.icon_close_btn:focus .icon_close {
   fill: #ffffff;
 }
 
@@ -697,20 +710,18 @@ img {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em
   transition: border-color 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
-.modal_input:hover, .modal_input:focus {
+.modal_input:focus {
   border-color: #4d5ae5;
 }
 
-.modal_input:hover
-  + .modal_field_icon, .modal_input:focus
-  + .modal_field_icon {
+.modal_input:focus + .modal_field_icon {
   fill: #4d5ae5;
 }
 
@@ -723,8 +734,6 @@ img {
   transition: fill 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal_input:hover + .modal_field_icon, .modal_input:focus + .modal_field_icon {fill: #4D5AE5;}
 
 .modal-privacy {
   margin-bottom: 24px;
@@ -744,10 +753,11 @@ img {
   color: rgba(46, 47, 66, 0.4);
   outline: transparent;
   resize: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: border-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_text:hover, .modal_text:focus {
+.modal_text:focus {
   border-color: #4d5ae5;
 }
 
@@ -757,14 +767,15 @@ img {
 
 .check-item {
   display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    fill: transparent;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    margin-right: 8px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  margin-right: 8px;
+  border: 1px solid
+    rgba(46, 47, 66, 0.4);
   transition: background-color 250ms
       cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms
@@ -781,14 +792,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
- }
+}
 
 .policy_link {
   text-decoration: underline;
   color: #4d5ae5;
 }
 
-.modal-check:checked + .check-text .check-item {
+.modal-check:checked
+  + .check-text
+  .check-item {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
