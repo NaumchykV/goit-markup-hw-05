@@ -994,7 +994,7 @@
             Subscribe
           </p>
           <form class="footer-form">
-            <label>
+            <label class="subscribe">
               <input
                 type="email"
                 name="footer-email"
@@ -1022,7 +1022,7 @@
       </div>
     </footer>
     <div class="backdrop is-open">
-      <div class="modal1">
+      <div class="modal">
         <button
           type="button"
           class="icon_close_btn"
@@ -1041,27 +1041,27 @@
           Leave your contacts and we
           will call you back
         </p>
-        <form class="modal1_form">
+        <form class="modal_form">
           <div class="modal-field">
             <label
-              for="name"
-              class="modal1_label"
+              for="user-name"
+              class="modal_label"
               >Name</label
             >
             <div
-              class="modal1_input_wrap"
+              class="modal_input_wrap"
             >
               <input
                 type="text"
-                class="modal1_input"
+                class="modal_input"
                 placeholder=""
-                name="name"
-                id="name"
+                name="user-name"
+                id="user-name"
               />
               <svg
-                class="modal1_field_icon"
-                width="12px"
-                height="12px"
+                class="modal_field_icon"
+                width="18px"
+                height="24px"
               >
                 <use
                   href="./images/icons.svg#icon-name"
@@ -1072,23 +1072,23 @@
           <div class="modal-field">
             <label
               for="phone"
-              class="modal1_label"
+              class="modal_label"
               >Phone</label
             >
             <div
-              class="modal1_input_wrap"
+              class="modal_input_wrap"
             >
               <input
                 type="tel"
-                class="modal1_input"
+                class="modal_input"
                 placeholder=""
                 name="phone"
                 id="phone"
               />
               <svg
-                class="modal1_field_icon"
-                width="13px"
-                height="13px"
+                class="modal_field_icon"
+                width="18px"
+                height="24px"
               >
                 <use
                   href="./images/icons.svg#icon-phone"
@@ -1099,23 +1099,23 @@
           <div class="modal-field">
             <label
               for="email"
-              class="modal1_label"
+              class="modal_label"
               >Email</label
             >
             <div
-              class="modal1_input_wrap"
+              class="modal_input_wrap"
             >
               <input
                 type="email"
-                class="modal1_input"
+                class="modal_input"
                 placeholder=""
                 name="email"
                 id="email"
               />
               <svg
-                class="modal1_field_icon"
-                width="16px"
-                height="12px"
+                class="modal_field_icon"
+                width="18px"
+                height="24px"
               >
                 <use
                   href="./images/icons.svg#icon-email"
@@ -1123,15 +1123,17 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div
+            class="modal-privacy-block"
+          >
             <label
-              for="user_comment"
-              class="modal1_label"
+              for="user-comment"
+              class="modal_label"
               >Comment</label
             >
             <textarea
-              name="user_comment"
-              id="user_comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               class="modal_text"
             ></textarea>
@@ -1139,24 +1141,23 @@
           <div class="modal-privacy">
             <input
               type="checkbox"
-              name="policy"
+              name="user-privacy"
               id="policy"
               class="modal_check visually-hidden"
               value="true"
             />
             <label
-              for="policy"
+              for="user-privacy"
               class="check_text"
               ><span class="check-item">
                 <svg
                   class="check_icon"
-                  width="10px"
-                  height="8px"
+                  width="10"
+                  height="8"
                 >
                   <use
                     href="./images/icons.svg#icon-checkbox"
-                  ></use>
-                </svg> </span
+                  ></use></svg></span
               >I accept the terms and
               conditions of the
               <a
@@ -1168,7 +1169,7 @@
           </div>
           <button
             type="submit"
-            class="modal1_btn"
+            class="modal_btn"
           >
             Send
           </button>
