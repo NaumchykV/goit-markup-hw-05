@@ -599,10 +599,7 @@ img {
     0.4
   );
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
+ }
 
 .backdrop .is-open {
   opacity: 1;
@@ -755,11 +752,20 @@ img {
   border-color: #4d5ae5;
 }
 
-.modal-privacy-block {
+.modal-comment-block {
   margin-bottom: 16px;
 }
 
 .check-item {
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color 250ms
       cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms
@@ -771,35 +777,19 @@ img {
 .check_icon {
 }
 
-.check_text {
+.check-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  align-items: center;
-}
+ }
 
 .policy_link {
   text-decoration: underline;
   color: #4d5ae5;
 }
 
-.check_text span {
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  border: 1px solid
-    rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  fill: transparent;
-}
-
-.modal_check:checked
-  + .check_text
-  span {
+.modal-check:checked + .check-text .check-item {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
